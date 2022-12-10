@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <h1 id="title">Coding Survey</h1>
+            <p id="description">
+                This is a survey for determining your coding gusto.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div id="basic-details">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name here" class="basicInfo" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email here" class="basicInfo" required>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="1" max="90" placeholder="Enter your age here" class="basicInfo" required>
+            </div>
+
+            <div class="choices">
+                <div id="select-options" class="choice">
+                    <label>
+                        Select your preferred domain
+                        <select name="dropdown" id="dropdown">
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="radio-options" class="choice">
+                    <p>Select your occupation</p>
+                    <label>
+                        <input type="radio" name="radio-options" value="student">
+                        Student
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-options" value="professional">
+                        Proffesional
+                    </label>
+                </div>
+
+                <div id="checkbox-options" class="choice">
+                    <p>Why do you wish to learn your preferred domain ?</p>
+                    <label>
+                        <input type="checkbox" name="increment" value="increment">
+                        For increment in package
+                    </label>
+                    <label>
+                        <input type="checkbox" name="project" value="project">
+                        For some project on mine
+                    </label>
+                    <label>
+                        <input type="checkbox" name="justFun" value="justFun">
+                        Just for the sake of it
+                    </label>
+                </div>
+            </div>
+
+            <div id="additional-text">
+                <textarea name="additional-comments" cols="30" rows="10"></textarea>
+                <p>Do you want to add something additional ?</p>
+            </div>
+            
+            <button type="submit" id="submit">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
