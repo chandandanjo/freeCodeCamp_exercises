@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-family: 'Diplomata SC', cursive;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-caption {
+    text-align: center;
+    padding: 0 20%;
+    margin-bottom: 20px;
+}
+
+#image {
+    max-height: 400px;
+    height: auto;
+    max-width: 100%;
+    margin: 20px 0;
+    box-shadow: inset 0px 0px 40px 4px rgba(255,255,255,0.76);
+}
+
+#tribute-info {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+tr {
+    margin-bottom: 5px;
+}
+
+.key {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+.value {
+    text-align: center;
+}
+
+#tribute-link {
+    margin-top: 10px;
+    text-decoration: none;
+}
